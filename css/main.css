@@ -1,0 +1,157 @@
+:root {
+    --primary-color: rgba(80,44,31);
+    --primary-color-highlight: #233D54;
+    --secondary-color:rgba(176,97,67,1);
+    --bs-body-bg: #fbf0f6;
+    --bs-body-font-family: 'Kaisei Decol', serif;
+}
+
+.header {
+    z-index: 2;
+
+}
+
+.navbar{
+background-color: var(--primary-color);
+}
+
+/* hero*/
+#hero {
+    background: linear-gradient(#00000035,#0000002a), url(../images/pexels-afta-putta-gunawan-683039.jpg);
+    background-position: center;
+    background-size: cover;
+    background-color: var(--primary-color);
+}
+
+#hero a.btn{
+background-color: var(--bs-body-bg);
+color: var(--primary-color);
+padding: 0.5rem 2rem;
+transition: all;
+transition-duration: 500ms;
+}
+#hero a.btn:hover{
+    scale: 1.100;
+    background-color: var(--primary-color);
+    color: var(--bs-body-bg);
+    border: var(--bs-body-bg);
+}
+
+#viaja {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    font-weight: 500;
+    margin-top: 3rem;
+    gap: 2rem;
+    overflow: hidden;
+}
+#viaja h2{
+    color: var(--secondary-color);
+}
+#viaja span{
+    color:var(--secondary-color)
+}
+#viaja #cafesito{
+width: 300px;
+right:150px;
+bottom: 200px;
+transform: rotate(-15deg) translate(10%, 30%);
+z-index: -1;
+}
+
+#viaja .bourbonarrow{
+    width: 120px;
+    position: absolute;
+    bottom: 3rem;
+    left: 19rem;
+}
+#viaja .bourbon{
+    width: 120px;
+    height: 120px;
+    top: 20rem;
+left: 25rem;
+    position: absolute;
+    transform: rotate(-15deg) translate(10%, 30%);
+    z-index: -3;
+}
+
+#viaja .keekorokarrow{
+    width: 120px;
+    position: absolute;
+    bottom: 6rem;
+    right: 20rem;
+}
+#viaja .keekorok {
+    width: 120px;
+    height: 120px;
+    position: absolute;
+    top: 20rem;
+    transform: rotate(15deg) translate(10%, 30%);
+    left: 37rem;
+    z-index: -3;
+}
+
+#viaja a.btn{
+    background-color: var(--primary-color);
+color: var(--bs-body-bg);
+padding: 0.5rem 2rem;
+transition: all;
+transition-duration: 500ms;
+}
+
+#viaja a.btn:hover{
+    scale: 1.100;
+    background-color: var(--bs-body-bg);
+    color: var(--primary-color);
+    border: var(--primary-color);
+}
+
+#viaja .iconf{
+    color: var(--secondary-color);
+    bottom: 24rem;
+    right: 9rem;
+    position: absolute;
+    z-index: 3;
+}
+#viaja .iconf:hover{
+    scale: 1.100;
+    background-color: var(--primary-color);
+    color: var(--bs-body-bg);
+    border: var(--bs-body-bg);
+}
+#viaja .iconi{
+    color: var(--secondary-color);
+    bottom: 18rem;
+    right: 9rem;
+    position: absolute;
+    z-index: 3;
+}
+
+#viaja .icont{
+    color: var(--secondary-color);
+    bottom: 12rem;
+    right: 9rem;
+    position: absolute;
+    z-index: 3;
+}
+.cafesito-circle{
+    background-color: var(--primary-color);
+    width: 28rem;
+    height: 28rem;
+    bottom: -10rem;
+    right: -120px;
+    z-index: -2;
+    border-radius: 50% 50% 50% 50%;
+    position: absolute;
+}
+@media (max-width: 768px){
+   #viaja .keekorokarrow{
+       display: none;
+    }
+    #viaja .bourbonarrow{
+        display: none;
+    }
+}
+
